@@ -56,6 +56,7 @@ class ArticlesController extends controller{
 	{
 		
 		$article = Article::findOrfail($id);
+		
 		$tags = \App\Tag::lists('name','id');
 		return view('articles.edit',compact('article','tags'));
 	}
