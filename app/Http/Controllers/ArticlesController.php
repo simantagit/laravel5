@@ -26,7 +26,7 @@ class ArticlesController extends controller{
 	public function show($id)
 	{
 		$article = Article::findOrfail($id);
-		//dd($article->published_at->diffForHumans());sasasaaas
+		//dd($article->published_at->diffForHumans());sasasaaas nnnnnnnnn
 		return view('articles.show',compact('article'));
 	}
 	
